@@ -1,0 +1,1 @@
+Ćwiczenia algorytmiczne z pythona
