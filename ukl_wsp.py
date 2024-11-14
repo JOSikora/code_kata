@@ -1,0 +1,15 @@
+import math
+
+print('Ten program pozwoli Ci przeliczyc wspolrzedne kartezjanskie na sferyczne i cylindryczne')
+x = float(input('podaj wspolrzedna x = '))
+y = float(input('podaj wspolrzedna y = '))
+r = math.sqrt(x**2 + y**2)
+fi = math.atan(y/x)
+teta = math.acos(0)
+print('WSPOLRZEDNE CYLINDRYCZNE')
+print('r = ', r)
+print('fi = ', fi)
+print('WSPOLRZEDNE SFERYCZNE')
+print('r = ', r)
+print('fi = ', fi)
+print('teta = ', teta)
