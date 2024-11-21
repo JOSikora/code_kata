@@ -8,10 +8,23 @@ for r in range(1,n+1):
 
 
 
+#trojkat pascala do sciany
+
 x = int(input('Podaj wielkosc trojkata Pascala: '))
 
 for i in range(x+1):
-    list = []
+    lista = []
     for j in range(i+1):
-        list.append(str(int(factorial(i)/(factorial(j)*factorial(i-j)))))
-    print(' '.join(list))
+        lista.append(str(int(factorial(i)/(factorial(j)*factorial(i-j)))))
+    print(' '.join(lista))
+
+# ladny trojkat rownoraminny
+a = int(input('Podaj wielkość trójkąta Pascala: '))
+
+for i in range(a + 1):
+    row = []
+    for j in range(i + 1):
+        row.append(str(int(factorial(i) / (factorial(j) * factorial(i - j)))))
+
+    # Wycentrowanie wiersza
+    print(' ' * (a - i), ' '.join(row))
